@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CaterServ.pages.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="CaterServ.pages.Register" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,7 @@
 <body>
 
     <!-- Spinner Start -->
-    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
@@ -45,20 +45,26 @@
                     <div class="border-bottom border-top border-primary bg-light py-5 px-4">
                         <div class="text-center">
                             <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">CaterServ</small>
-                            <h1 class="display-5 mb-5">Sign In</h1>
+                            <h1 class="display-5 mb-5">Sign Up</h1>
                         </div>
                         <div class="row g-4 form">
                             <div class="col-12">
                                 <input type="text" class="form-control border-primary p-2" placeholder="Enter Username: ">
                             </div>
                             <div class="col-12">
+                                <input type="email" class="form-control border-primary p-2" placeholder="Enter Email: ">
+                            </div>
+                            <div class="col-12">
+                                <input type="number" class="form-control border-primary p-2" placeholder="Enter Number: ">
+                            </div>
+                            <div class="col-12">
                                 <input type="password" class="form-control border-primary p-2" placeholder="Enter Password: ">
                             </div>
                             <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Sign In</button>
+                                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Sign Up</button>
                             </div>
                             <div class="col-12 text-center">
-                                <a href="Register" class="px-4 py-2 rounded-pill">Don't have an account ?</a>
+                                <a href="Login" class="px-4 py-2 rounded-pill">Already have an account ?</a>
                             </div>
                         </div>
                     </div>
