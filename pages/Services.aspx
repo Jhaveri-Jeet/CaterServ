@@ -134,7 +134,7 @@
             <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-1.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>
@@ -156,7 +156,7 @@
                 </div>
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-2.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-3.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>
@@ -200,7 +200,7 @@
                 </div>
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-4.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>
@@ -224,7 +224,7 @@
             <div class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp" data-wow-delay="0.3s">
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-1.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>
@@ -246,7 +246,7 @@
                 </div>
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-2.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>
@@ -268,7 +268,7 @@
                 </div>
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-3.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>
@@ -290,7 +290,7 @@
                 </div>
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
-                        <img src="img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0" alt="">
+                        <img src='<%= ResolveUrl("~/img/testimonial-4.jpg") %>' class="img-fluid rounded-circle flex-shrink-0" alt="">
                         <div class="position-absolute" style="top: 15px; right: 20px;">
                             <i class="fa fa-quote-right fa-2x"></i>
                         </div>

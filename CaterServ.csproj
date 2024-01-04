@@ -70,6 +70,7 @@
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="pages\Login.aspx" />
     <Content Include="pages\Menu.aspx" />
     <Content Include="pages\Services.aspx" />
     <Content Include="Web.config" />
@@ -102,6 +103,13 @@
     </Compile>
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>

@@ -54,7 +54,7 @@
                         <a href="pages/Menu" runat="server" class="nav-item nav-link">Menu</a>
                         <a href="pages/ContactUs" runat="server" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="index#booknow" runat="server" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+                    <a href="pages/Login" runat="server" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Login Now</a>
                 </div>
             </nav>
         </div>
