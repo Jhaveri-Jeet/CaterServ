@@ -35,13 +35,29 @@
                                 <h6 class="fw-light">Sign in to continue.</h6>
                                 <form class="pt-3">
                                     <div class="form-group">
-                                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                                        <asp:TextBox ID="exampleInputEmail1" type="text" class="form-control form-control-lg" placeholder="Username" runat="server"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter Email" ControlToValidate="exampleInputEmail1"></asp:RequiredFieldValidator>
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                                        <asp:TextBox ID="exampleInputPassword1" type="password" class="form-control form-control-lg" placeholder="Password" runat="server"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter Password" ControlToValidate="exampleInputPassword1"></asp:RequiredFieldValidator>
                                     </div>
+                                    <asp:Panel ID="panel_warning" runat="server" CssClass="mt-3 fixed-top" Visible="false">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6 mx-auto">
+                                                    <div class="card-footer">
+                                                        <br />
+                                                        <div class="alert alert-danger text-center">
+                                                            <asp:Label ID="lbl_examlistwarning" runat="server" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
                                     <div class="mt-3">
-                                        <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="../admin-index.aspx">SIGN IN</a>
+                                        <asp:Button runat="server" ID="btn_login" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" Text="Sign In" OnClick="btn_login_Click" />
                                     </div>
                                     <div class="my-2 d-flex justify-content-between align-items-center">
                                         <div class="form-check">

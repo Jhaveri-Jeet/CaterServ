@@ -1461,7 +1461,10 @@
     <Content Include="admin-assets\vendors\x-editable\bootstrap-editable.css" />
     <Content Include="admin-assets\vendors\x-editable\bootstrap-editable.min.js" />
     <Content Include="admin-index.aspx" />
+    <Content Include="admin-pages\Add-Category.aspx" />
+    <Content Include="admin-pages\Categories.aspx" />
     <Content Include="admin-pages\Login.aspx" />
+    <Content Include="admin-pages\Logout.aspx" />
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="index.aspx" />
@@ -1479,12 +1482,33 @@
     <Compile Include="admin-index.aspx.designer.cs">
       <DependentUpon>admin-index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin-pages\Add-Category.aspx.cs">
+      <DependentUpon>Add-Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Add-Category.aspx.designer.cs">
+      <DependentUpon>Add-Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin-pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin-pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -1550,6 +1574,7 @@
     <Compile Include="pages\Services.aspx.designer.cs">
       <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Common\Services.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.Master" />

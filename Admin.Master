@@ -43,10 +43,10 @@
                     </div>
                     <div>
                         <a class="navbar-brand brand-logo" href="index.html">
-                            <img src="admin-assets/images/logo.svg" alt="logo" />
+                            <img src="/admin-assets/images/logo.svg" alt="logo" />
                         </a>
                         <a class="navbar-brand brand-logo-mini" href="index.html">
-                            <img src="admin-assets/images/logo-mini.svg" alt="logo" />
+                            <img src="/admin-assets/images/logo-mini.svg" alt="logo" />
                         </a>
                     </div>
                 </div>
@@ -99,12 +99,7 @@
                                 <input type="text" class="form-control">
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <form class="search-form" action="#">
-                                <i class="icon-search"></i>
-                                <input type="search" class="form-control" placeholder="Search Here" title="Search here">
-                            </form>
-                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
                                 <i class="icon-mail icon-lg"></i>
@@ -156,7 +151,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
-                                        <img src="admin-assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                                        <img src="/admin-assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
                                     </div>
                                     <div class="preview-item-content flex-grow py-2">
                                         <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
@@ -165,7 +160,7 @@
                                 </a>
                                 <a class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
-                                        <img src="admin-assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
+                                        <img src="/admin-assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
                                     </div>
                                     <div class="preview-item-content flex-grow py-2">
                                         <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
@@ -174,7 +169,7 @@
                                 </a>
                                 <a class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
-                                        <img src="admin-assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
+                                        <img src="/admin-assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
                                     </div>
                                     <div class="preview-item-content flex-grow py-2">
                                         <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
@@ -185,11 +180,11 @@
                         </li>
                         <li class="nav-item dropdown d-none d-lg-block user-dropdown">
                             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img class="img-xs rounded-circle" src="admin-assets/images/faces/face8.jpg" alt="Profile image">
+                                <img class="img-xs rounded-circle" src="/admin-assets/images/faces/face8.jpg" alt="Profile image">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                                 <div class="dropdown-header text-center">
-                                    <img class="img-md rounded-circle" src="admin-assets/images/faces/face8.jpg" alt="Profile image">
+                                    <img class="img-md rounded-circle" src="/admin-assets/images/faces/face8.jpg" alt="Profile image">
                                     <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                                     <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
                                 </div>
@@ -197,7 +192,7 @@
                                 <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i>Messages</a>
                                 <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i>Activity</a>
                                 <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i>FAQ</a>
-                                <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                                <a class="dropdown-item" href="/admin-pages/Logout.aspx"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
                             </div>
                         </li>
                     </ul>
@@ -207,32 +202,8 @@
                 </div>
             </nav>
             <!-- partial -->
+
             <div class="container-fluid page-body-wrapper">
-                <!-- partial:partials/_settings-panel.html -->
-                <div class="theme-setting-wrapper">
-                    <div id="settings-trigger"><i class="ti-settings"></i></div>
-                    <div id="theme-settings" class="settings-panel">
-                        <i class="settings-close ti-close"></i>
-                        <p class="settings-heading">SIDEBAR SKINS</p>
-                        <div class="sidebar-bg-options selected" id="sidebar-light-theme">
-                            <div class="img-ss rounded-circle bg-light border me-3"></div>
-                            Light
-                        </div>
-                        <div class="sidebar-bg-options" id="sidebar-dark-theme">
-                            <div class="img-ss rounded-circle bg-dark border me-3"></div>
-                            Dark
-                        </div>
-                        <p class="settings-heading mt-2">HEADER SKINS</p>
-                        <div class="color-tiles mx-0 px-4">
-                            <div class="tiles success"></div>
-                            <div class="tiles warning"></div>
-                            <div class="tiles danger"></div>
-                            <div class="tiles info"></div>
-                            <div class="tiles dark"></div>
-                            <div class="tiles default"></div>
-                        </div>
-                    </div>
-                </div>
                 <div id="right-sidebar" class="settings-panel">
                     <i class="settings-close ti-close"></i>
                     <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
@@ -329,7 +300,7 @@
                             <ul class="chat-list">
                                 <li class="list active">
                                     <div class="profile">
-                                        <img src="admin-assets/images/faces/face1.jpg" alt="image"><span class="online"></span>
+                                        <img src="/admin-assets/images/faces/face1.jpg" alt="image"><span class="online"></span>
                                     </div>
                                     <div class="info">
                                         <p>Thomas Douglas</p>
@@ -339,7 +310,7 @@
                                 </li>
                                 <li class="list">
                                     <div class="profile">
-                                        <img src="admin-assets/images/faces/face2.jpg" alt="image"><span class="offline"></span>
+                                        <img src="/admin-assets/images/faces/face2.jpg" alt="image"><span class="offline"></span>
                                     </div>
                                     <div class="info">
                                         <div class="wrapper d-flex">
@@ -352,7 +323,7 @@
                                 </li>
                                 <li class="list">
                                     <div class="profile">
-                                        <img src="admin-assets/images/faces/face3.jpg" alt="image"><span class="online"></span>
+                                        <img src="/admin-assets/images/faces/face3.jpg" alt="image"><span class="online"></span>
                                     </div>
                                     <div class="info">
                                         <p>Daniel Russell</p>
@@ -362,7 +333,7 @@
                                 </li>
                                 <li class="list">
                                     <div class="profile">
-                                        <img src="admin-assets/images/faces/face4.jpg" alt="image"><span class="offline"></span>
+                                        <img src="/admin-assets/images/faces/face4.jpg" alt="image"><span class="offline"></span>
                                     </div>
                                     <div class="info">
                                         <p>James Richardson</p>
@@ -372,7 +343,7 @@
                                 </li>
                                 <li class="list">
                                     <div class="profile">
-                                        <img src="admin-assets/images/faces/face5.jpg" alt="image"><span class="online"></span>
+                                        <img src="/admin-assets/images/faces/face5.jpg" alt="image"><span class="online"></span>
                                     </div>
                                     <div class="info">
                                         <p>Madeline Kennedy</p>
@@ -382,7 +353,7 @@
                                 </li>
                                 <li class="list">
                                     <div class="profile">
-                                        <img src="admin-assets/images/faces/face6.jpg" alt="image"><span class="online"></span>
+                                        <img src="/admin-assets/images/faces/face6.jpg" alt="image"><span class="online"></span>
                                     </div>
                                     <div class="info">
                                         <p>Sarah Graves</p>
@@ -399,94 +370,40 @@
                 <!-- partial:partials/_sidebar.html -->
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
+                        <li class="nav-item" id="dashboardLink">
+                            <a class="nav-link" href="../admin-index.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Dashboard</span>
                             </a>
                         </li>
-                        <li class="nav-item nav-category">UI Elements</li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                                <i class="menu-icon mdi mdi-floor-plan"></i>
-                                <span class="menu-title">UI Elements</span>
-                                <i class="menu-arrow"></i>
+                        <li class="nav-item" id="CatgoryLink">
+                            <a class="nav-link" href="/admin-pages/Categories.aspx">
+                                <i class="mdi mdi-grid-large menu-icon"></i>
+                                <span class="menu-title">Category</span>
                             </a>
-                            <div class="collapse" id="ui-basic">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-                                </ul>
-                            </div>
                         </li>
-                        <li class="nav-item nav-category">Forms and Datas</li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-                                <i class="menu-icon mdi mdi-card-text-outline"></i>
-                                <span class="menu-title">Form elements</span>
-                                <i class="menu-arrow"></i>
+                        <li class="nav-item" id="menuLink">
+                            <a class="nav-link" href="index.html">
+                                <i class="mdi mdi-grid-large menu-icon"></i>
+                                <span class="menu-title">Menu</span>
                             </a>
-                            <div class="collapse" id="form-elements">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
-                                </ul>
-                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-                                <i class="menu-icon mdi mdi-chart-line"></i>
-                                <span class="menu-title">Charts</span>
-                                <i class="menu-arrow"></i>
+                        <li class="nav-item" id="requestLink">
+                            <a class="nav-link" href="index.html">
+                                <i class="mdi mdi-grid-large menu-icon"></i>
+                                <span class="menu-title">Request</span>
                             </a>
-                            <div class="collapse" id="charts">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
-                                </ul>
-                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-                                <i class="menu-icon mdi mdi-table"></i>
-                                <span class="menu-title">Tables</span>
-                                <i class="menu-arrow"></i>
+                        <li class="nav-item" id="feedbackLink">
+                            <a class="nav-link" href="index.html">
+                                <i class="mdi mdi-grid-large menu-icon"></i>
+                                <span class="menu-title">Feedback</span>
                             </a>
-                            <div class="collapse" id="tables">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
-                                </ul>
-                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-                                <i class="menu-icon mdi mdi-layers-outline"></i>
-                                <span class="menu-title">Icons</span>
-                                <i class="menu-arrow"></i>
-                            </a>
-                            <div class="collapse" id="icons">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item nav-category">pages</li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                                <i class="menu-icon mdi mdi-account-circle-outline"></i>
-                                <span class="menu-title">User Pages</span>
-                                <i class="menu-arrow"></i>
-                            </a>
-                            <div class="collapse" id="auth">
-                                <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"><a class="nav-link" href="admin-pages/Login.aspx">Login </a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item nav-category">help</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
-                                <i class="menu-icon mdi mdi-file-document"></i>
-                                <span class="menu-title">Documentation</span>
+                        <li class="nav-item" id="inquiryLink">
+                            <a class="nav-link" href="index.html">
+                                <i class="mdi mdi-grid-large menu-icon"></i>
+                                <span class="menu-title">Inquiry</span>
                             </a>
                         </li>
                     </ul>
@@ -516,25 +433,51 @@
         <!-- container-scroller -->
 
         <!-- plugins:js -->
-        <script src="admin-assets/vendors/js/vendor.bundle.base.js"></script>
+        <script src="/admin-assets/vendors/js/vendor.bundle.base.js"></script>
         <!-- endinject -->
         <!-- Plugin js for this page -->
-        <script src="admin-assets/vendors/chart.js/Chart.min.js"></script>
-        <script src="admin-assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-        <script src="admin-assets/vendors/progressbar.js/progressbar.min.js"></script>
+        <script src="/admin-assets/vendors/chart.js/Chart.min.js"></script>
+        <script src="/admin-assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+        <script src="/admin-assets/vendors/progressbar.js/progressbar.min.js"></script>
 
         <!-- End plugin js for this page -->
         <!-- inject:js -->
-        <script src="admin-assets/js/off-canvas.js"></script>
-        <script src="admin-assets/js/hoverable-collapse.js"></script>
-        <script src="admin-assets/js/template.js"></script>
-        <script src="admin-assets/js/settings.js"></script>
-        <script src="admin-assets/js/todolist.js"></script>
+        <script src="/admin-assets/js/off-canvas.js"></script>
+        <script src="/admin-assets/js/hoverable-collapse.js"></script>
+        <script src="/admin-assets/js/template.js"></script>
+        <script src="/admin-assets/js/settings.js"></script>
+        <script src="/admin-assets/js/todolist.js"></script>
         <!-- endinject -->
         <!-- Custom js for this page-->
-        <script src="admin-assets/js/dashboard.js"></script>
-        <script src="admin-assets/js/Chart.roundedBarCharts.js"></script>
+        <script src="/admin-assets/js/dashboard.js"></script>
+        <script src="/admin-assets/js/Chart.roundedBarCharts.js"></script>
         <!-- End custom js for this page-->
+
+        <!-- Include this script at the end of your HTML, after the sidebar -->
+        <script>
+            // Get the current page URL
+            var currentUrl = window.location.pathname;
+
+            // Define the mapping of page URLs to corresponding sidebar IDs
+            var sidebarMapping = {
+                '/admin-index.aspx': 'dashboardLink',
+                '/admin-pages/Categories.aspx': 'categoryLink',
+                '/admin-pages/Add-Category.aspx': 'categoryLink',
+                '/admin-pages/Login.aspx': 'categoryLink',
+            };
+
+            // Get the corresponding sidebar ID for the current page
+            var currentSidebarId = sidebarMapping[currentUrl];
+
+            // Add the 'active' class to the corresponding sidebar link
+            if (currentSidebarId) {
+                var activeLink = document.getElementById(currentSidebarId);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        </script>
+
     </form>
 </body>
 </html>

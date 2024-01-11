@@ -5,21 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CaterServ
+namespace CaterServ.admin_pages
 {
-    public partial class Admin : System.Web.UI.MasterPage
+    public partial class Logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                if (Session["Admin"] == null || Session["Username"] == null)
-                {
-                    Response.Redirect("~/admin-pages/Login.aspx");
-                }
+                Session.Clear();  
+                Response.Redirect("~/admin-pages/Login.aspx");
             }
         }
-
-
     }
 }
