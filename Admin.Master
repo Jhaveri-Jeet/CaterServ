@@ -371,13 +371,13 @@
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav">
                         <li class="nav-item" id="dashboardLink">
-                            <a class="nav-link" href="../admin-index.aspx">
+                            <a class="nav-link" href="admin-index.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item" id="CatgoryLink">
-                            <a class="nav-link" href="/admin-pages/Categories.aspx">
+                            <a class="nav-link" href="/admin-pages/Category/Categories.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Category</span>
                             </a>
@@ -401,7 +401,7 @@
                             </a>
                         </li>
                         <li class="nav-item" id="inquiryLink">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="/admin-pages/Inquiry/Inquiries.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Inquiry</span>
                             </a>

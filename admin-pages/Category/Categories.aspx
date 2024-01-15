@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="CaterServ.admin_pages.Categories" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="CaterServ.admin_pages.Category.Categories" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -12,8 +12,22 @@
                         <a class="btn btn-primary btn-rounded btn-fw" href="Add-Category.aspx">Add</a>
                     </p>
                 </div>
+                <asp:Panel ID="panel_warning" runat="server" CssClass="mt-3 fixed-top" Visible="false">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <div class="card-footer">
+                                    <br />
+                                    <div class="alert alert-danger text-center">
+                                        <asp:Label ID="lbl_examlistwarning" runat="server" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </asp:Panel>
                 <div class="table-responsive border border-gray rounded-2">
-                    <asp:Repeater ID="Repeater1" runat="server">
+                    <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="dispalyCategory_ItemCommand">
                         <HeaderTemplate>
                             <table class="table table-striped ">
                                 <thead>
@@ -30,12 +44,12 @@
                                 <td><%# (Container.ItemIndex + 1).ToString() %></td>
                                 <td><%# Eval("Name") %></td>
                                 <td class="d-flex justify-content-evenly">
-                                    <button type="button" class="btn btn-primary btn-rounded btn-icon">
+                                    <a href="Edit-Category.aspx?id=<%# Eval("Id") %>" role="button" class="btn btn-primary btn-rounded btn-icon">
                                         <i class="ti-pencil"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-danger btn-rounded btn-icon">
+                                    </a>
+                                    <asp:LinkButton runat="server" ID="deleteBtn" type="button" class="btn btn-danger btn-rounded btn-icon" CommandName="DeleteCategory" CommandArgument='<%# Eval("id") %>'>
                                         <i class="ti-trash"></i>
-                                    </button>
+                                    </asp:LinkButton>
                                 </td>
                             </tr>
                         </ItemTemplate>

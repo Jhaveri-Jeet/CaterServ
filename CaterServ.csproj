@@ -1461,8 +1461,10 @@
     <Content Include="admin-assets\vendors\x-editable\bootstrap-editable.css" />
     <Content Include="admin-assets\vendors\x-editable\bootstrap-editable.min.js" />
     <Content Include="admin-index.aspx" />
-    <Content Include="admin-pages\Add-Category.aspx" />
-    <Content Include="admin-pages\Categories.aspx" />
+    <Content Include="admin-pages\Category\Add-Category.aspx" />
+    <Content Include="admin-pages\Category\Categories.aspx" />
+    <Content Include="admin-pages\Category\Edit-Category.aspx" />
+    <Content Include="admin-pages\Inquiry\Inquiries.aspx" />
     <Content Include="admin-pages\Login.aspx" />
     <Content Include="admin-pages\Logout.aspx" />
     <Content Include="pages\AboutUs.aspx" />
@@ -1482,19 +1484,33 @@
     <Compile Include="admin-index.aspx.designer.cs">
       <DependentUpon>admin-index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin-pages\Add-Category.aspx.cs">
+    <Compile Include="admin-pages\Category\Add-Category.aspx.cs">
       <DependentUpon>Add-Category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin-pages\Add-Category.aspx.designer.cs">
+    <Compile Include="admin-pages\Category\Add-Category.aspx.designer.cs">
       <DependentUpon>Add-Category.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin-pages\Categories.aspx.cs">
+    <Compile Include="admin-pages\Category\Categories.aspx.cs">
       <DependentUpon>Categories.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin-pages\Categories.aspx.designer.cs">
+    <Compile Include="admin-pages\Category\Categories.aspx.designer.cs">
       <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Category\Edit-Category.aspx.cs">
+      <DependentUpon>Edit-Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Category\Edit-Category.aspx.designer.cs">
+      <DependentUpon>Edit-Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Inquiry\Inquiries.aspx.cs">
+      <DependentUpon>Inquiries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Inquiry\Inquiries.aspx.designer.cs">
+      <DependentUpon>Inquiries.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin-pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
