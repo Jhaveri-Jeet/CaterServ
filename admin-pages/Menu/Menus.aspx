@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Categories.aspx.cs" Inherits="CaterServ.admin_pages.Category.Categories" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Menus.aspx.cs" Inherits="CaterServ.admin_pages.Menu.Menus" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -7,9 +7,9 @@
         <div class="card">
             <div class="card-body">
                 <div class="card-body d-flex justify-content-between m-0 p-0">
-                    <h4 class="card-title start-0 p-3">Categories</h4>
+                    <h4 class="card-title start-0 p-3">Menus</h4>
                     <p class="card-description end-0">
-                        <a class="btn btn-primary btn-rounded btn-fw" href="Add-Category.aspx">Add</a>
+                        <a class="btn btn-primary btn-rounded btn-fw" href="Add-Menu.aspx">Add</a>
                     </p>
                 </div>
                 <asp:Panel ID="panel_warning" runat="server" CssClass="mt-3 fixed-top" Visible="false">
@@ -27,13 +27,16 @@
                     </div>
                 </asp:Panel>
                 <div class="table-responsive border border-gray rounded-2">
-                    <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="dispalyCategory_ItemCommand">
+                    <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="dispalyMenu_ItemCommand">
                         <HeaderTemplate>
                             <table class="table table-striped ">
                                 <thead>
                                     <tr class="text-center">
                                         <th>No.</th>
                                         <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Image</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -43,19 +46,22 @@
                             <tr class="text-center">
                                 <td><%# (Container.ItemIndex + 1).ToString() %></td>
                                 <td><%# Eval("Name") %></td>
+                                <td><%# Eval("Description") %></td>
+                                <td><%# Eval("Price") %></td>
+                                <td><%# Eval("ImageName") %></td>
                                 <td class="d-flex justify-content-evenly">
                                     <a href="Edit-Category.aspx?id=<%# Eval("Id") %>" role="button" class="btn btn-primary btn-rounded btn-icon">
                                         <i class="ti-pencil"></i>
                                     </a>
-                                    <asp:LinkButton runat="server" ID="deleteBtn" type="button" class="btn btn-danger btn-rounded btn-icon" CommandName="DeleteCategory" CommandArgument='<%# Eval("id") %>'>
-                                        <i class="ti-trash"></i>
+                                    <asp:LinkButton runat="server" ID="deleteBtn" type="button" class="btn btn-danger btn-rounded btn-icon" CommandName="DeleteMenu" CommandArgument='<%# Eval("id") %>'>
+                                     <i class="ti-trash"></i>
                                     </asp:LinkButton>
                                 </td>
                             </tr>
                         </ItemTemplate>
                         <FooterTemplate>
                             </tbody>
-                            </table>
+                         </table>
                         </FooterTemplate>
                     </asp:Repeater>
                 </div>

@@ -383,7 +383,7 @@
                             </a>
                         </li>
                         <li class="nav-item" id="menuLink">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="admin-pages/Menu/Menus.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Menu</span>
                             </a>

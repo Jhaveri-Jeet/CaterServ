@@ -1467,6 +1467,8 @@
     <Content Include="admin-pages\Inquiry\Inquiries.aspx" />
     <Content Include="admin-pages\Login.aspx" />
     <Content Include="admin-pages\Logout.aspx" />
+    <Content Include="admin-pages\Menu\Add-Menu.aspx" />
+    <Content Include="admin-pages\Menu\Menus.aspx" />
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="index.aspx" />
@@ -1525,6 +1527,20 @@
     </Compile>
     <Compile Include="admin-pages\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Menu\Add-Menu.aspx.cs">
+      <DependentUpon>Add-Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Menu\Add-Menu.aspx.designer.cs">
+      <DependentUpon>Add-Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Menu\Menus.aspx.cs">
+      <DependentUpon>Menus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Menu\Menus.aspx.designer.cs">
+      <DependentUpon>Menus.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -1945,7 +1961,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="uploads\" />
+  </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="admin-assets\vendors\tinymce\tinymce.d.ts" />
   </ItemGroup>
