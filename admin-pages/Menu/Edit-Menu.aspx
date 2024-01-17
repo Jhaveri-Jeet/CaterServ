@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Add-Menu.aspx.cs" Inherits="CaterServ.admin_pages.Menu.Add_Menu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Edit-Menu.aspx.cs" Inherits="CaterServ.admin_pages.Menu.Edit_Menu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -51,7 +51,7 @@
                         <br />
 
                     </div>
-                    <asp:Button runat="server" ID="btn_login" class="btn btn-primary me-2" Text="Add" OnClick="add_menu" />
+                    <asp:Button runat="server" ID="btn_login" class="btn btn-primary me-2" Text="Add"  />
                     <a href="Categories.aspx" class="btn btn-light">Cancel</a>
                 </div>
             </div>

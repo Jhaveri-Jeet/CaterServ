@@ -48,9 +48,11 @@
                                 <td><%# Eval("Name") %></td>
                                 <td><%# Eval("Description") %></td>
                                 <td><%# Eval("Price") %></td>
-                                <td><%# Eval("ImageName") %></td>
-                                <td class="d-flex justify-content-evenly">
-                                    <a href="Edit-Category.aspx?id=<%# Eval("Id") %>" role="button" class="btn btn-primary btn-rounded btn-icon">
+                                <td>
+                                    <asp:Image ID="MenuImage" CssClass="border-0 rounded-0" runat="server" ImageUrl='<%# Eval("ImageName", "~/uploads/{0}") %>' Height="100" Width="100" />
+                                </td>
+                                <td class="d-flex justify-content-evenly h-100 py-5">
+                                    <a href="Edit-Menu.aspx?id=<%# Eval("Id") %>" role="button" class="btn btn-primary btn-rounded btn-icon">
                                         <i class="ti-pencil"></i>
                                     </a>
                                     <asp:LinkButton runat="server" ID="deleteBtn" type="button" class="btn btn-danger btn-rounded btn-icon" CommandName="DeleteMenu" CommandArgument='<%# Eval("id") %>'>

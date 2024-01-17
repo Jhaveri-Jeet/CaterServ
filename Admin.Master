@@ -371,37 +371,37 @@
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav">
                         <li class="nav-item" id="dashboardLink">
-                            <a class="nav-link" href="admin-index.aspx">
+                            <a class="nav-link" ID="homeLink" runat="server" href="admin-index.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Dashboard</span>
                             </a>
                         </li>
                         <li class="nav-item" id="CatgoryLink">
-                            <a class="nav-link" href="/admin-pages/Category/Categories.aspx">
+                            <a class="nav-link" ID="categoryLink" runat="server" href="/admin-pages/Category/Categories.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Category</span>
                             </a>
                         </li>
                         <li class="nav-item" id="menuLink">
-                            <a class="nav-link" href="admin-pages/Menu/Menus.aspx">
+                            <a class="nav-link" ID="MenuLink" runat="server" href="admin-pages/Menu/Menus.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Menu</span>
                             </a>
                         </li>
                         <li class="nav-item" id="requestLink">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" ID="RequestLink" runat="server" href="index.html">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Request</span>
                             </a>
                         </li>
                         <li class="nav-item" id="feedbackLink">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" ID="FeedbackLink" runat="server" href="index.html">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Feedback</span>
                             </a>
                         </li>
                         <li class="nav-item" id="inquiryLink">
-                            <a class="nav-link" href="/admin-pages/Inquiry/Inquiries.aspx">
+                            <a class="nav-link" ID="InquiryLink" runat="server" href="/admin-pages/Inquiry/Inquiries.aspx">
                                 <i class="mdi mdi-grid-large menu-icon"></i>
                                 <span class="menu-title">Inquiry</span>
                             </a>

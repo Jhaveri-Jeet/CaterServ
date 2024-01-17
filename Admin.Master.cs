@@ -18,6 +18,13 @@ namespace CaterServ
                     Response.Redirect("~/admin-pages/Login.aspx");
                 }
             }
+
+            homeLink.HRef = "~/admin-index.aspx";
+            MenuLink.HRef = "~/admin-pages/Menu/Menus.aspx";
+            categoryLink.HRef = "~/admin-pages/Category/Categories.aspx";
+            FeedbackLink.HRef = "~/admin-index.aspx";
+            InquiryLink.HRef = "~/admin-index.aspx";
+            RequestLink.HRef = "~/admin-index.aspx";
         }
 
 

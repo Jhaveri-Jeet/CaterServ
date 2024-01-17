@@ -1468,6 +1468,7 @@
     <Content Include="admin-pages\Login.aspx" />
     <Content Include="admin-pages\Logout.aspx" />
     <Content Include="admin-pages\Menu\Add-Menu.aspx" />
+    <Content Include="admin-pages\Menu\Edit-Menu.aspx" />
     <Content Include="admin-pages\Menu\Menus.aspx" />
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\ContactUs.aspx" />
@@ -1534,6 +1535,13 @@
     </Compile>
     <Compile Include="admin-pages\Menu\Add-Menu.aspx.designer.cs">
       <DependentUpon>Add-Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Menu\Edit-Menu.aspx.cs">
+      <DependentUpon>Edit-Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Menu\Edit-Menu.aspx.designer.cs">
+      <DependentUpon>Edit-Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin-pages\Menu\Menus.aspx.cs">
       <DependentUpon>Menus.aspx</DependentUpon>

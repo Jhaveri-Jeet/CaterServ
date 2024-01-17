@@ -48,7 +48,7 @@ namespace CaterServ.admin_pages.Menu
 
                     if (effectedRows > 0)
                     {
-                        Response.Redirect("~/admin-pages/Category/Categories.aspx");
+                        Response.Redirect("~/admin-pages/Menu/Menus.aspx");
                     }
                     else
                     {
