@@ -59,6 +59,14 @@ namespace CaterServ.admin_pages.Menu
                             "setTimeout(function() { document.getElementById('" + panel_warning.ClientID + "').style.display='none'; }, 1000);", true);
                     }
                 }
+                else
+                {
+                    panel_warning.Visible = true;
+                    lbl_examlistwarning.Text = "Iamge is Only Supported in jpg/jpeg/png Format !";
+
+                    ScriptManager.RegisterStartupScript(this, GetType(), "HidePanelScript", "" +
+                        "setTimeout(function() { document.getElementById('" + panel_warning.ClientID + "').style.display='none'; }, 1000);", true);
+                }
             }
         }
     }

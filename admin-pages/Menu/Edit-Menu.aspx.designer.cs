@@ -105,6 +105,15 @@ namespace CaterServ.admin_pages.Menu
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
+        /// CurrentMenuImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage CurrentMenuImage;
+
+        /// <summary>
         /// DescriptionInput control.
         /// </summary>
         /// <remarks>

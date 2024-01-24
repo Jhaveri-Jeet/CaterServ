@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Inquiries.aspx.cs" Inherits="CaterServ.admin_pages.Inquiry.Inquiries" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Requests.aspx.cs" Inherits="CaterServ.admin_pages.Request.Requests" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -27,15 +27,19 @@
                     </div>
                 </asp:Panel>
                 <div class="table-responsive border border-gray rounded-2">
-                    <asp:Repeater ID="Repeater1" runat="server" >
+                    <asp:Repeater ID="Repeater1" runat="server">
                         <HeaderTemplate>
                             <table class="table table-striped ">
                                 <thead>
                                     <tr class="text-center">
                                         <th>No.</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Message</th>
+                                        <th>Date</th>
+                                        <th>Country</th>
+                                        <th>State</th>
+                                        <th>No Of People</th>
+                                        <th>Food Type</th>
+                                        <th>Time</th>
+                                        <th>View</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -43,9 +47,17 @@
                         <ItemTemplate>
                             <tr class="text-center">
                                 <td><%# (Container.ItemIndex + 1).ToString() %></td>
-                                <td><%# Eval("Name") %></td>
-                                <td><%# Eval("Email") %></td>
-                                <td><%# Eval("Message") %></td>
+                                <td><%# Eval ("Date") %></td>
+                                <td><%# Eval ("Country") %></td>
+                                <td><%# Eval ("State") %></td>
+                                <td><%# Eval ("NumberOfPeople") %></td>
+                                <td><%# Eval ("FoodType") %></td>
+                                <td><%# Eval ("Time") %></td>
+                                <td>
+                                    <a role="button" href="/Single-Request.aspx?id=<%# Eval ("Id") %>" class="btn btn-primary btn-rounded btn-icon">
+                                        <i class="ti-eye"></i>
+                                    </a>
+                                </td>
                             </tr>
                         </ItemTemplate>
                         <FooterTemplate>

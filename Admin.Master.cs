@@ -22,9 +22,10 @@ namespace CaterServ
             homeLink.HRef = "~/admin-index.aspx";
             MenuLink.HRef = "~/admin-pages/Menu/Menus.aspx";
             categoryLink.HRef = "~/admin-pages/Category/Categories.aspx";
-            FeedbackLink.HRef = "~/admin-index.aspx";
-            InquiryLink.HRef = "~/admin-index.aspx";
-            RequestLink.HRef = "~/admin-index.aspx";
+            FeedbackLink.HRef = "~/admin-pages/Feedback/Feedbacks.aspx";
+            InquiryLink.HRef = "~/admin-pages/Inquiry/Inquiries.aspx";
+            RequestLink.HRef = "~/admin-pages/Request/Requests.aspx";
+
         }
 
 

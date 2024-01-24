@@ -1464,12 +1464,14 @@
     <Content Include="admin-pages\Category\Add-Category.aspx" />
     <Content Include="admin-pages\Category\Categories.aspx" />
     <Content Include="admin-pages\Category\Edit-Category.aspx" />
+    <Content Include="admin-pages\Feedback\Feedbacks.aspx" />
     <Content Include="admin-pages\Inquiry\Inquiries.aspx" />
     <Content Include="admin-pages\Login.aspx" />
     <Content Include="admin-pages\Logout.aspx" />
     <Content Include="admin-pages\Menu\Add-Menu.aspx" />
     <Content Include="admin-pages\Menu\Edit-Menu.aspx" />
     <Content Include="admin-pages\Menu\Menus.aspx" />
+    <Content Include="admin-pages\Request\Requests.aspx" />
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="index.aspx" />
@@ -1507,6 +1509,13 @@
     </Compile>
     <Compile Include="admin-pages\Category\Edit-Category.aspx.designer.cs">
       <DependentUpon>Edit-Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Feedback\Feedbacks.aspx.cs">
+      <DependentUpon>Feedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Feedback\Feedbacks.aspx.designer.cs">
+      <DependentUpon>Feedbacks.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin-pages\Inquiry\Inquiries.aspx.cs">
       <DependentUpon>Inquiries.aspx</DependentUpon>
@@ -1549,6 +1558,13 @@
     </Compile>
     <Compile Include="admin-pages\Menu\Menus.aspx.designer.cs">
       <DependentUpon>Menus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Request\Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Request\Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>

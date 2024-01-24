@@ -7,7 +7,7 @@
         <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Add Menu</h4>
+                    <h4 class="card-title">Edit Menu</h4>
                     <div class="form-group">
                         <asp:Panel ID="panel_warning" runat="server" CssClass="mt-3 fixed-top" Visible="false">
                             <div class="container">
@@ -45,14 +45,20 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Enter " ControlToValidate="MenuImageUpload"></asp:RequiredFieldValidator>
                         <br />
 
+                        <label for="CurrentMenuImage">Current Image</label>
+                        <br />
+
+                        <img class="w-25 h-25 my-3"  runat="server" ID="CurrentMenuImage" />
+                        <br />
+
                         <label for="DescriptionInput">Menu Description</label>
                         <asp:TextBox ID="DescriptionInput" type="text" class="form-control" TextMode="MultiLine" placeholder="Menu Description" Rows="5" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Enter Category Name" ControlToValidate="DescriptionInput"></asp:RequiredFieldValidator>
                         <br />
 
                     </div>
-                    <asp:Button runat="server" ID="btn_login" class="btn btn-primary me-2" Text="Add"  />
-                    <a href="Categories.aspx" class="btn btn-light">Cancel</a>
+                    <asp:Button runat="server" ID="btn_login" class="btn btn-primary me-2" Text="Edit" OnClick="Edit_Click" />
+                    <a href="Menus.aspx" class="btn btn-light">Cancel</a>
                 </div>
             </div>
         </div>
