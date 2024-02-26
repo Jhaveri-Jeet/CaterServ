@@ -23,42 +23,43 @@
                 <h1 class="display-5 mb-5">Most Popular Food in the World</h1>
             </div>
             <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
-                    <asp:Repeater ID="categoryRepeater" runat="server" OnItemCommand="categoryRepeater_ItemCommand">
-                        <ItemTemplate>
-                            <li class="nav-item p-2">
-                                <button runat="server" ID="categoryItem" class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
-                                    data-commandname="Select"
-                                    data-commandargument='<%# Eval("Id") %>'>
-                                    <span class="text-dark" style="width: 150px;"><%# Eval("Name") %></span>
-                                </button>
-                            </li>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-6" class="tab-pane fade show p-0 active">
-                        <div class="row g-4">
-                            <asp:Repeater ID="menuRepeater" runat="server">
-                                <ItemTemplate>
-                                    <div class="col-lg-6 wow bounceInUp">
-                                        <div class="menu-item d-flex align-items-center">
-                                            <img class="img-fluid rounded-circle" src='<%# ResolveUrl("~/uploads/") + Eval("ImageName") %>' alt="">
-                                            <div class="w-100 d-flex flex-column text-start ps-4">
-                                                <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
-                                                    <h4><%# Eval("Name") %></h4>
-                                                    <h4 class="text-primary"><%# Eval("Price", "{0:C}") %></h4>
+                <form runat="server">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                        <asp:Repeater ID="categoryRepeater" runat="server" OnItemCommand="categoryRepeater_ItemCommand">
+                            <ItemTemplate>
+                                <li class="nav-item p-2">
+                                    <asp:Button runat="server" ID="categoryItem" CssClass="d-flex py-2 mx-2 border border-primary bg-white rounded-pill"
+                                        CommandName="Select"
+                                        CommandArgument='<%# Eval("Id") %>'
+                                        Text='<%# Eval("Name") %>' />
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-6" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <asp:Repeater ID="menuRepeater" runat="server">
+                                    <ItemTemplate>
+                                        <div class="col-lg-6 wow bounceInUp">
+                                            <div class="menu-item d-flex align-items-center">
+                                                <img class="img-fluid rounded-circle" src='<%# ResolveUrl("~/uploads/") + Eval("ImageName") %>' height="150" width="100" alt="">
+                                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                                    <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                                        <h4><%# Eval("Name") %></h4>
+                                                        <h4 class="text-primary"><%# Eval("Price", "{0:C}") %></h4>
+                                                    </div>
+                                                    <p class="mb-0"><%# Eval("Description") %></p>
                                                 </div>
-                                                <p class="mb-0"><%# Eval("Description") %></p>
                                             </div>
                                         </div>
-                                    </div>
-                                </ItemTemplate>
-                            </asp:Repeater>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

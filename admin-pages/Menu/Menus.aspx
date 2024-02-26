@@ -34,7 +34,6 @@
                                     <tr class="text-center">
                                         <th>No.</th>
                                         <th>Name</th>
-                                        <th>Description</th>
                                         <th>Price</th>
                                         <th>Image</th>
                                         <th>Action</th>
@@ -46,7 +45,6 @@
                             <tr class="text-center">
                                 <td><%# (Container.ItemIndex + 1).ToString() %></td>
                                 <td><%# Eval("Name") %></td>
-                                <td><%# Eval("Description") %></td>
                                 <td><%# Eval("Price") %></td>
                                 <td>
                                     <asp:Image ID="MenuImage" CssClass="border-0 rounded-0" runat="server" ImageUrl='<%# Eval("ImageName", "~/uploads/{0}") %>' Height="100" Width="100" />

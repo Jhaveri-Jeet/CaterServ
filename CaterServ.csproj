@@ -1472,6 +1472,7 @@
     <Content Include="admin-pages\Menu\Edit-Menu.aspx" />
     <Content Include="admin-pages\Menu\Menus.aspx" />
     <Content Include="admin-pages\Request\Requests.aspx" />
+    <Content Include="admin-pages\Request\SingleRequest.aspx" />
     <Content Include="pages\AboutUs.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="index.aspx" />
@@ -1565,6 +1566,13 @@
     </Compile>
     <Compile Include="admin-pages\Request\Requests.aspx.designer.cs">
       <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-pages\Request\SingleRequest.aspx.cs">
+      <DependentUpon>SingleRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-pages\Request\SingleRequest.aspx.designer.cs">
+      <DependentUpon>SingleRequest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>

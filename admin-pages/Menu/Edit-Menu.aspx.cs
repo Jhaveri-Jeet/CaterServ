@@ -107,7 +107,7 @@ namespace CaterServ.admin_pages.Menu
             else
             {
                 panel_warning.Visible = true;
-                lbl_examlistwarning.Text = "Me  nu didn't updated !";
+                lbl_examlistwarning.Text = "Menu didn't updated !";
 
                 ScriptManager.RegisterStartupScript(this, GetType(), "HidePanelScript", "" +
                     "setTimeout(function() { document.getElementById('" + panel_warning.ClientID + "').style.display='none'; }, 1000);", true);

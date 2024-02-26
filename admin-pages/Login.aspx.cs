@@ -24,7 +24,8 @@ namespace CaterServ.admin_pages
                 "   [Name] = '" + exampleInputEmail1.Text + "' " +
                 "AND " +
                 "   [Password] = '" + exampleInputPassword1.Text + "'" +
-                "");
+                "AND " +
+                "   [RoleId] = 1 ");
 
             if (dt.Rows.Count == 1)
             {
@@ -42,7 +43,6 @@ namespace CaterServ.admin_pages
                     "setTimeout(function() { document.getElementById('" + panel_warning.ClientID + "').style.display='none'; }, 1000);", true);
 
             }
-
         }
     }
 }

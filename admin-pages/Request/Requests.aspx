@@ -7,9 +7,8 @@
         <div class="card">
             <div class="card-body">
                 <div class="card-body d-flex justify-content-between m-0 p-0">
-                    <h4 class="card-title start-0 p-3">Categories</h4>
+                    <h4 class="card-title start-0 p-3">Requests</h4>
                     <p class="card-description end-0">
-                        <a class="btn btn-primary btn-rounded btn-fw" href="Add-Category.aspx">Add</a>
                     </p>
                 </div>
                 <asp:Panel ID="panel_warning" runat="server" CssClass="mt-3 fixed-top" Visible="false">
@@ -54,7 +53,7 @@
                                 <td><%# Eval ("FoodType") %></td>
                                 <td><%# Eval ("Time") %></td>
                                 <td>
-                                    <a role="button" href="/Single-Request.aspx?id=<%# Eval ("Id") %>" class="btn btn-primary btn-rounded btn-icon">
+                                    <a role="button" href="./SingleRequest.aspx?id=<%# Eval ("Id") %>" class="btn btn-primary btn-rounded btn-icon">
                                         <i class="ti-eye"></i>
                                     </a>
                                 </td>

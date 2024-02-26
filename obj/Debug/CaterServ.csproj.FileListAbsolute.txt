@@ -113,6 +113,6 @@ D:\Development\ASP Projects\CaterServ\bin\Microsoft.CodeDom.Providers.DotNetComp
 D:\Development\ASP Projects\CaterServ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Development\ASP Projects\CaterServ\obj\Debug\CaterServ.csproj.AssemblyReference.cache
 D:\Development\ASP Projects\CaterServ\obj\Debug\CaterServ.csproj.CoreCompileInputs.cache
-D:\Development\ASP Projects\CaterServ\obj\Debug\CaterServ.csproj.CopyComplete
 D:\Development\ASP Projects\CaterServ\obj\Debug\CaterServ.dll
 D:\Development\ASP Projects\CaterServ\obj\Debug\CaterServ.pdb
+D:\Development\ASP Projects\CaterServ\obj\Debug\CaterServ.csproj.Up2Date
