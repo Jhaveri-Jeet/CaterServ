@@ -55,14 +55,13 @@
                         <a href="pages/ContactUs" runat="server" class="nav-item nav-link">Contact</a>
                     </div>
                     <form runat="server">
-                        <asp:LinkButton href="pages/Login" runat="server" ID="loginLink" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Login Now</asp:LinkButton>
+                        <asp:LinkButton Text="Login Now" href="pages/Login" runat="server" ID="loginLink" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill" />
                     </form>
                 </div>
             </nav>
         </div>
     </div>
     <!-- Navbar End -->
-
     <div>
         <asp:ContentPlaceHolder ID="ConstantContent" runat="server">
         </asp:ContentPlaceHolder>

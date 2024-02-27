@@ -13,10 +13,10 @@ namespace CaterServ
         {
             if (!IsPostBack)
             {
-
                 if (Session["UserName"] != null && Session["Admin"].ToString() == "False")
                 {
                     loginLink.Text = "Log Out";
+                    loginLink.Attributes["href"] = "pages/Logout"; 
                 }
             }
         }

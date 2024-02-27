@@ -29,7 +29,7 @@ namespace CaterServ.admin_pages
 
             if (dt.Rows.Count == 1)
             {
-                Session["Admin"] = true;
+                Session["Admin"] = "true";
                 Session["UserName"] = exampleInputEmail1.Text;
 
                 Response.Redirect("~/admin-index.aspx");

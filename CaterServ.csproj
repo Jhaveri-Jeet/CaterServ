@@ -1477,6 +1477,7 @@
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="index.aspx" />
     <Content Include="pages\Login.aspx" />
+    <Content Include="pages\Logout.aspx" />
     <Content Include="pages\Menu.aspx" />
     <Content Include="pages\Register.aspx" />
     <Content Include="pages\Services.aspx" />
@@ -1615,6 +1616,13 @@
     </Compile>
     <Compile Include="pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
