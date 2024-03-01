@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace CaterServ.pages
 {
@@ -12,6 +8,26 @@ namespace CaterServ.pages
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void SignBtn_Click(object sender, EventArgs e)
+        {
+            string sql = "INSERT INTO [Users] (Name,Email,Number,Password,RoleId) VALUES('" + Username.Value + "','" + Email.Value + "','" + Number.Value + "','" + Password.Value + "',2)";
+
+            int affectedRows = Common.Services.execute(sql);
+
+            if (affectedRows < 0)
+            {
+                panel_warning.Visible = true;
+                lbl_examlistwarning.Text = "Registration Is Faild";
+
+                ScriptManager.RegisterStartupScript(this, GetType(), "HidePanelScript", "" +
+                    "setTimeout(function() { document.getElementById('" + panel_warning.ClientID + "').style.display='none'; }, 1000);", true);
+            }
+            else
+            {
+                Response.Redirect("~/pages/Login");
+            }
         }
     }
 }

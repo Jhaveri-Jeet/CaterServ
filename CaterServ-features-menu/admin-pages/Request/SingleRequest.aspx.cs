@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Web;
-using System.Web.DynamicData;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace CaterServ.admin_pages.Request
 {
@@ -87,6 +81,32 @@ namespace CaterServ.admin_pages.Request
 
             if (effectedRows > 0)
             {
+
+                string sqlForRequest = @"SELECT 
+                                    BookingRequest.Id,
+                                    BookingRequest.UserId,
+                                    BookingRequest.Date,
+                                    BookingRequest.Time,
+                                    BookingRequest.City,
+                                    BookingRequest.Venue,
+                                    BookingRequest.NumberOfPeople,
+                                    BookingRequest.FoodType,
+                                    BookingRequest.StatusId, 
+                                    Users.Name,
+                                    Users.Email,
+                                    Users.Number
+                                FROM 
+                                    BookingRequest
+                                INNER JOIN
+                                    Users
+                                ON
+                                    Users.Id = BookingRequest.UserId
+                                WHERE
+                                    BookingRequest.Id = " + id;
+
+                DataTable dt = Common.Services.select(sqlForRequest);
+
+                bool response = Common.Services.SendEmail(dt.Rows[0]["Email"].ToString(), dt.Rows[0]["Name"].ToString(), Status.SelectedItem.ToString());
                 Response.Redirect("~/admin-pages/Request/Requests.aspx");
             }
             else

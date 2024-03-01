@@ -31,7 +31,7 @@
                             <asp:Repeater ID="categoryRepeater" runat="server">
                                 <ItemTemplate>
                                     <li class="nav-item p-2">
-                                        <asp:HiddenField ID="HiddenField1" runat="server" Value='<%# Eval("Id") %>'/>
+                                        <asp:HiddenField ID="HiddenField1" runat="server" Value='<%# Eval("Id") %>' />
                                         <asp:Button runat="server" ID="categoryItem" CssClass="d-flex py-2 mx-2 border border-primary bg-white rounded-pill px-2"
                                             Text='<%# Eval("Name") %>'
                                             OnClick="categoryItem_Click"

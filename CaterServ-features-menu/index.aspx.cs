@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Web.UI;
 
 namespace CaterServ
@@ -15,24 +14,7 @@ namespace CaterServ
         {
             if (Session["UserName"] != null && Session["Admin"].ToString() == "False")
             {
-
-                string dateString = date.Text;
-                string timeString = time.Text;
-
-                // Parse the date and time strings to a single DateTime object
-                DateTime dateTime;
-                if (!DateTime.TryParseExact(dateString + " " + timeString, "yyyy-MM-dd HH:mm", null, DateTimeStyles.None, out dateTime))
-                {
-                    lbl_examlistwarning.Text = "Invalid date or time format.";
-                    return;
-                }
-
-                // Format the DateTime object as "dd/MM/yyyy hh:mm:ss tt"
-                string formattedDateTime = dateTime.ToString("dd/MM/yyyy hh:mm:ss tt");
-
-
-
-                string sql = "INSERT INTO [BookingRequest] (UserId,Date,City,Venue,NumberOfPeople,FoodType,Time,StatusId) VALUES('" + Session["UserId"] + "'," + dateTime.Date + ",'" + city.Text + "','" + venue.Text + "','" + numberofpeople.Text + "','" + foodtype.SelectedValue + "','" + formattedDateTime + "',1)";
+                string sql = "INSERT INTO [BookingRequest] (UserId,Date,City,Venue,NumberOfPeople,FoodType,Time,StatusId) VALUES('" + Session["UserId"] + "','" + date.Text + "','" + city.Text + "','" + venue.Text + "','" + numberofpeople.Text + "','" + foodtype.SelectedValue + "','" + time.Text + "',1)";
 
                 int affectedRows = Common.Services.execute(sql);
 

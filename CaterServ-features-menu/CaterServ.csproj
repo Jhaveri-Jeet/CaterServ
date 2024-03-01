@@ -1474,6 +1474,7 @@
     <Content Include="admin-pages\Request\Requests.aspx" />
     <Content Include="admin-pages\Request\SingleRequest.aspx" />
     <Content Include="pages\AboutUs.aspx" />
+    <Content Include="pages\Feedback.aspx" />
     <Content Include="pages\ContactUs.aspx" />
     <Content Include="index.aspx" />
     <Content Include="pages\Login.aspx" />
@@ -1588,6 +1589,13 @@
     </Compile>
     <Compile Include="pages\AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>

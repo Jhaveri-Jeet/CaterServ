@@ -13,7 +13,7 @@ namespace CaterServ
         {
             if (!IsPostBack)
             {
-                if (Session["Admin"] == null || Session["Username"] == null)
+                if (Session["Admin"].ToString() == "False" && Session["Username"] == null)
                 {
                     Response.Redirect("~/admin-pages/Login.aspx");
                 }
