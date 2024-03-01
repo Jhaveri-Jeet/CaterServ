@@ -11,12 +11,13 @@ namespace CaterServ
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Admin"].ToString() == "False")
+            {
+                Response.Redirect("~/admin-pages/Login.aspx");
+            }
             if (!IsPostBack)
             {
-                if (Session["Admin"].ToString() == "False" && Session["Username"] == null)
-                {
-                    Response.Redirect("~/admin-pages/Login.aspx");
-                }
+                Console.WriteLine("HEllo");
             }
 
             homeLink.HRef = "~/admin-index.aspx";

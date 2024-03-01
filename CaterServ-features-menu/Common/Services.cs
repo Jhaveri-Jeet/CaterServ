@@ -8,7 +8,7 @@ namespace CaterServ.Common
 {
     public class Services
     {
-        static SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=CaterServDb;Integrated Security=True");
+        static SqlConnection con = new SqlConnection("Data Source = DD\\SQLEXPRESS; Initial Catalog = CaterServDb; Integrated Security = True; Encrypt=False");
         internal static int execute(string sql)
         {
             con.Open();
