@@ -15,10 +15,7 @@ namespace CaterServ
             {
                 Response.Redirect("~/admin-pages/Login.aspx");
             }
-            if (!IsPostBack)
-            {
-                Console.WriteLine("HEllo");
-            }
+
 
             homeLink.HRef = "~/admin-index.aspx";
             MenuLink.HRef = "~/admin-pages/Menu/Menus.aspx";
